@@ -1,0 +1,15 @@
+{
+  "profiles": [
+    {
+      "id": "example",
+      "name": "My Server",
+      "address": "play.example.com",
+      "port": 12000,
+      "notesUrl": "https://example.com/patchnotes.md",
+      "patchUrl": "",
+      "bugUrl": "https://github.com/you/your-repo/issues/new",
+      "autoPatch": false,
+      "school": "storm"
+    }
+  ]
+}

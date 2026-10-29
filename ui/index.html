@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spiral Navigator</title>
+<link rel="stylesheet" href="app.css">
+</head>
+<body>
+<div class="shell">
+  <aside class="rail" aria-label="Servers">
+    <div class="brand">
+      <svg class="brand-mark" viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l3.2 9.1L28 13.6l-7 5.6 2.4 9L16 23.3 8.6 28.2 11 19.2 4 13.6l8.8-1.5z" fill="currentColor"/></svg>
+      <span class="brand-name">Spiral Navigator</span>
+    </div>
+    <nav id="servers" class="servers" aria-label="Your servers"></nav>
+    <div class="rail-foot">
+      <button class="btn btn-ghost btn-block" id="addServer">Add a server</button>
+      <div class="rail-links">
+        <button class="link" id="pasteServer">Paste a shared server</button>
+        <button class="link" id="openSettings">Settings</button>
+      </div>
+    </div>
+  </aside>
+
+  <main class="stage" id="stage"></main>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+<div id="modalRoot"></div>
+<script src="app.js"></script>
+</body>
+</html>
